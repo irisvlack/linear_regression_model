@@ -27,8 +27,7 @@ warnings.filterwarnings('ignore')
 def style(table):
     """
     quick styling
-    style: https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.background_gradient.html
-    color: https://matplotlib.org/stable/tutorials/colors/colormaps.html
+
     """
     view = table.style.background_gradient(cmap='Pastel1')
     return view
@@ -77,7 +76,7 @@ def whitespace_remover(df):
     Takes the data frame as a parameter and checks the data type of each column.
     If the column's datatype is 'Object.', apply strip function; else, it does nothing.
     Use the whitespace_remover() process on the data frame, which successfully removes the extra whitespace from the columns.
-    https://www.geeksforgeeks.org/pandas-strip-whitespace-from-entire-dataframe/
+    
     """
     # iterating over the columns
     for i in df.columns:
@@ -94,7 +93,7 @@ def whitespace_remover(df):
 
 """
  Impute missing values by taking category-specific numerical and categorical imputations
- Credit: https://towardsdatascience.com/pandas-tricks-for-imputing-missing-data-63da3d14c0d6
+ 
  """
 
 
